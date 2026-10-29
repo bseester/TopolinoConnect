@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="590" viewBox="0 0 1100 590" role="img" aria-labelledby="title desc">
+  <title id="title">Topolino Connect proje yapısı</title>
+  <desc id="desc">Depo kökünde AndroidGateway, MacApp, Sources, MyCitroenPort, Tests ve docs bölümleri bulunur; ESP32 firmware'i ayrı depodadır.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#eef4fb"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#18334e" flood-opacity=".12"/></filter>
+    <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#172b42}.title{font-size:28px;font-weight:750}.sub{font-size:15px;fill:#52677d}.head{font-size:17px;font-weight:700}.body{font-size:13px;fill:#52677d}.inverse{fill:#fff}.folder{filter:url(#shadow)}</style>
+  </defs>
+  <rect width="1100" height="590" rx="26" fill="url(#bg)"/>
+  <text x="42" y="55" class="title">Kodun haritası</text>
+  <text x="42" y="83" class="sub">Her uygulamanın yeri ve görevi — aradığınız özelliğe göre doğru klasöre gidin.</text>
+  <g class="folder"><rect x="385" y="115" width="330" height="68" rx="17" fill="#173450"/><text x="418" y="157" class="head inverse">TopolinoConnect/ · depo kökü</text></g>
+  <path d="M550 183V207M145 207H955M145 207V230M347 207V230M550 207V230M753 207V230M955 207V230M550 207V423M145 423H955M145 423V446M347 423V446M550 423V446M753 423V446M955 423V446" fill="none" stroke="#9aadc0" stroke-width="2.5"/>
+  <g class="folder"><rect x="45" y="230" width="200" height="150" rx="18" fill="#fff"/><rect x="45" y="230" width="200" height="9" rx="4" fill="#7550bd"/><text x="65" y="273" class="head">AndroidGateway/</text><text x="65" y="303" class="body">Telefon arayüzü</text><text x="65" y="326" class="body">BLE · USB-OTG</text><text x="65" y="349" class="body">CAN decode · relay</text></g>
+  <g class="folder"><rect x="247" y="230" width="200" height="150" rx="18" fill="#fff"/><rect x="247" y="230" width="200" height="9" rx="4" fill="#2478b6"/><text x="267" y="273" class="head">MacApp/</text><text x="267" y="303" class="body">Mac CAN monitor</text><text x="267" y="326" class="body">USB seri akışı</text><text x="267" y="349" class="body">Hız + tanılama</text></g>
+  <g class="folder"><rect x="449" y="230" width="200" height="150" rx="18" fill="#fff"/><rect x="449" y="230" width="200" height="9" rx="4" fill="#1b9a7a"/><text x="469" y="273" class="head">Sources/</text><text x="469" y="303" class="body">Swift ortak kodu</text><text x="469" y="326" class="body">CAN decoder</text><text x="469" y="349" class="body">Seri port okuma</text></g>
+  <g class="folder"><rect x="651" y="230" width="200" height="150" rx="18" fill="#fff"/><rect x="651" y="230" width="200" height="9" rx="4" fill="#d45d81"/><text x="671" y="273" class="head">MyCitroenPort/</text><text x="671" y="303" class="body">iOS test uygulaması</text><text x="671" y="326" class="body">Widget · Watch</text><text x="671" y="349" class="body">Android'den veri alır</text></g>
+  <g class="folder"><rect x="853" y="230" width="200" height="150" rx="18" fill="#fff"/><rect x="853" y="230" width="200" height="9" rx="4" fill="#d49835"/><text x="873" y="273" class="head">AndroidGateway/</text><text x="873" y="303" class="body">relay/</text><text x="873" y="326" class="body">İsteğe bağlı HTTPS</text><text x="873" y="349" class="body">Worker · D1 schema</text></g>
+  <g class="folder"><rect x="45" y="446" width="200" height="105" rx="18" fill="#fff"/><rect x="45" y="446" width="200" height="9" rx="4" fill="#607c99"/><text x="65" y="489" class="head">Tests/</text><text x="65" y="519" class="body">Swift testleri</text></g>
+  <g class="folder"><rect x="247" y="446" width="200" height="105" rx="18" fill="#fff"/><rect x="247" y="446" width="200" height="9" rx="4" fill="#607c99"/><text x="267" y="489" class="head">docs/</text><text x="267" y="519" class="body">Kılavuzlar · mimari</text></g>
+  <g class="folder"><rect x="449" y="446" width="402" height="105" rx="18" fill="#fff7e8" stroke="#e8c78e"/><text x="473" y="489" class="head">ESP32 firmware · ayrı GitHub deposu</text><text x="473" y="519" class="body">TopolinoInfoDisplay · bu deponun içinde yer almaz</text></g>
+  <g class="folder"><rect x="853" y="446" width="200" height="105" rx="18" fill="#fff"/><rect x="853" y="446" width="200" height="9" rx="4" fill="#607c99"/><text x="873" y="489" class="head">Package.swift</text><text x="873" y="519" class="body">Swift paket tanımı</text></g>
+  <text x="47" y="576" class="body">İpucu: Android BLE bağlantısı için AndroidGateway/app · ortak Swift CAN çözümü için Sources/ konumuna bakın.</text>
+</svg>

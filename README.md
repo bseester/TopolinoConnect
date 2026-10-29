@@ -14,6 +14,8 @@ Fiat Topolino / Citroën Ami için CAN verisini ESP32 + MCP2515 üzerinden izley
 
 Proje yapısı ve veri akışı için [`docs/PROJECT_MAP.md`](docs/PROJECT_MAP.md), yerel kurulum için [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md), yayın öncesi için [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md) dosyalarına bak.
 
+İlk kurulum, kablolama, uygulamaların kullanımı ve sorun giderme için **[görselli kullanıcı kılavuzunu](docs/USER_GUIDE.md)** aç.
+
 ## Hızlı başlangıç
 
 ### Android

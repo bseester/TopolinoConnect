@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32 DevKit ile MCP2515 pin bağlantısı</title>
+  <desc id="desc">CS GPIO33, SCK GPIO14, MOSI GPIO13, MISO GPIO12, INT GPIO27 ve GND GND pinlerine bağlanır. VCC kartın lojik seviyesine göre doğrulanmalıdır.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#eef4fb"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#18334e" flood-opacity=".12"/></filter>
+    <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#172b42}.title{font-size:28px;font-weight:750}.sub{font-size:15px;fill:#52677d}.head{font-size:18px;font-weight:700}.pin{font-size:15px;font-weight:650}.desc{font-size:13px;fill:#61758a}.warn{font-size:14px;font-weight:650;fill:#8d4b17}.inverse{fill:#fff}.mutedInverse{fill:#b8c8d8}.wire{fill:none;stroke-width:3.5;stroke-linecap:round}.esp{filter:url(#shadow)}</style>
+  </defs>
+  <rect width="1000" height="560" rx="26" fill="url(#bg)"/>
+  <text x="42" y="55" class="title">ESP32 DevKit ↔ MCP2515</text>
+  <text x="42" y="84" class="sub">SPI pin eşleşmesi · firmware yapılandırmasındaki HWv2 pinlerine göre</text>
+  <g class="esp"><rect x="90" y="128" width="290" height="320" rx="24" fill="#18334e"/><text x="133" y="170" class="head inverse">ESP32 DevKit</text><text x="133" y="197" class="desc mutedInverse">USB ile besleme (masa testi)</text></g>
+  <g class="esp"><rect x="620" y="156" width="290" height="265" rx="24" fill="#fff"/><text x="665" y="200" class="head">MCP2515 CAN</text><text x="665" y="227" class="desc">CAN denetleyici + transceiver</text></g>
+  <g fill="#dce8f2" stroke="#fff" stroke-width="2">
+    <circle cx="380" cy="245" r="7"/><circle cx="380" cy="285" r="7"/><circle cx="380" cy="325" r="7"/><circle cx="380" cy="365" r="7"/><circle cx="380" cy="405" r="7"/><circle cx="380" cy="445" r="7"/>
+  </g>
+  <g fill="#344f69" stroke="#8fa6bb" stroke-width="2">
+    <circle cx="620" cy="245" r="7"/><circle cx="620" cy="285" r="7"/><circle cx="620" cy="325" r="7"/><circle cx="620" cy="365" r="7"/><circle cx="620" cy="405" r="7"/><circle cx="620" cy="445" r="7"/>
+  </g>
+  <g fill="#fff" class="pin">
+    <text x="132" y="250">GPIO 33 · CS</text><text x="132" y="290">GPIO 14 · SCK</text><text x="132" y="330">GPIO 13 · MOSI</text><text x="132" y="370">GPIO 12 · MISO</text><text x="132" y="410">GPIO 27 · INT</text><text x="132" y="450">GND</text>
+  </g>
+  <g class="pin"><text x="665" y="250">CS</text><text x="665" y="290">SCK</text><text x="665" y="330">SI / MOSI</text><text x="665" y="370">SO / MISO</text><text x="665" y="410">INT</text><text x="665" y="450">GND</text></g>
+  <path d="M388 245H612" class="wire" stroke="#ee6b62"/><path d="M388 285H612" class="wire" stroke="#e6ad3f"/><path d="M388 325H612" class="wire" stroke="#4aa47c"/><path d="M388 365H612" class="wire" stroke="#4b8dc5"/><path d="M388 405H612" class="wire" stroke="#a17bc7"/><path d="M388 445H612" class="wire" stroke="#42566b"/>
+  <rect x="90" y="478" width="820" height="57" rx="14" fill="#fff1dc" stroke="#f0c98e"/>
+  <text x="112" y="502" class="warn">VCC/lojik seviyesi bu çizimde sabitlenmemiştir.</text><text x="112" y="523" class="desc">Modül veri sayfasından doğrulayın. ESP32 GPIO'larına 5 V vermeyin; yanlış besleme karta zarar verebilir.</text>
+</svg>

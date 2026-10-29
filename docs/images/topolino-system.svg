@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Topolino Connect sistem mimarisi</title>
+  <desc id="desc">Araç CAN verisi MCP2515 ve ESP32 üzerinden Bluetooth veya USB ile Android/Mac'e aktarılır; Android isteğe bağlı olarak internetten iOS'a iletir.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#eef4fb"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#18334e" flood-opacity=".12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#53708e"/></marker>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#172b42}.title{font-size:30px;font-weight:750}.sub{font-size:16px;fill:#52677d}.head{font-size:18px;font-weight:700}.body{font-size:14px;fill:#52677d}.tiny{font-size:12px;fill:#667b91}.box{filter:url(#shadow)}.line{fill:none;stroke:#53708e;stroke-width:3;marker-end:url(#arrow)}.wire{fill:none;stroke:#22977e;stroke-width:3;marker-end:url(#arrow)}.net{fill:none;stroke:#8272cc;stroke-width:3;stroke-dasharray:8 7;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="560" rx="28" fill="url(#bg)"/>
+  <text x="52" y="62" class="title">Topolino Connect · verinin yolculuğu</text>
+  <text x="52" y="92" class="sub">CAN hattından uygulamalara — giriş yolu seçilebilir, Android'de aynı anda tek kaynak aktiftir.</text>
+
+  <g class="box"><rect x="48" y="205" width="170" height="112" rx="18" fill="#fff"/><rect x="48" y="205" width="8" height="112" rx="4" fill="#2681c2"/><text x="72" y="244" class="head">Araç CAN</text><text x="72" y="272" class="body">CAN-H · CAN-L</text><text x="72" y="294" class="tiny">Araç ağı mesajları</text></g>
+  <g class="box"><rect x="278" y="205" width="170" height="112" rx="18" fill="#fff"/><rect x="278" y="205" width="8" height="112" rx="4" fill="#18a587"/><text x="302" y="244" class="head">MCP2515</text><text x="302" y="272" class="body">CAN alıcı modülü</text><text x="302" y="294" class="tiny">ESP32 ile SPI bağlantısı</text></g>
+  <g class="box"><rect x="508" y="205" width="170" height="112" rx="18" fill="#fff"/><rect x="508" y="205" width="8" height="112" rx="4" fill="#e49b32"/><text x="532" y="244" class="head">ESP32</text><text x="532" y="272" class="body">CAN akışını aktarır</text><text x="532" y="294" class="tiny">Firmware ayrı depoda</text></g>
+  <g class="box"><rect x="755" y="115" width="195" height="112" rx="18" fill="#fff"/><rect x="755" y="115" width="8" height="112" rx="4" fill="#754fc2"/><text x="779" y="154" class="head">Android Gateway</text><text x="779" y="182" class="body">BLE veya USB-OTG</text><text x="779" y="204" class="tiny">CAN çözümleme + gösterge</text></g>
+  <g class="box"><rect x="755" y="360" width="195" height="112" rx="18" fill="#fff"/><rect x="755" y="360" width="8" height="112" rx="4" fill="#2776b8"/><text x="779" y="399" class="head">Mac CAN Monitor</text><text x="779" y="427" class="body">USB seri · 115200 baud</text><text x="779" y="449" class="tiny">Ham akış ve tanılama</text></g>
+  <g class="box"><rect x="1010" y="205" width="150" height="112" rx="18" fill="#fff"/><rect x="1010" y="205" width="8" height="112" rx="4" fill="#d15e82"/><text x="1034" y="244" class="head">iPhone</text><text x="1034" y="272" class="body">iOS test uygulaması</text><text x="1034" y="294" class="tiny">Android aktarımından</text></g>
+
+  <path d="M218 261H272" class="line"/><path d="M448 261H502" class="line"/>
+  <path d="M678 235C715 235 716 171 749 171" class="line"/><text x="685" y="188" class="tiny">BLE</text>
+  <path d="M678 286C715 286 716 416 749 416" class="line"/><text x="686" y="345" class="tiny">USB</text>
+  <path d="M584 317C584 475 738 516 844 477" class="wire"/><text x="615" y="502" class="tiny">USB seri · Mac</text>
+  <path d="M950 171C985 171 982 261 1004 261" class="net"/><text x="964" y="194" class="tiny">İsteğe bağlı HTTPS</text>
+  <rect x="48" y="520" width="1104" height="1" fill="#d9e3ed"/><text x="52" y="543" class="tiny">BLE ve OTG aynı anda kullanılmaz · Tanımı doğrulanmamış CAN alanları aday olarak değerlendirilir</text>
+</svg>
