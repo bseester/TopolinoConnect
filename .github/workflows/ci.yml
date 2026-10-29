@@ -1,0 +1,40 @@
+name: Topolino CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  android:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - name: Test, lint, and package debug APK
+        working-directory: AndroidGateway
+        run: ./gradlew testDebugUnitTest lintDebug assembleDebug
+
+  relay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test relay schema
+        working-directory: AndroidGateway/relay
+        run: npm test
+
+  swift-package:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test shared Swift package
+        run: swift test

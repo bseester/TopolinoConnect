@@ -1,0 +1,39 @@
+# IDE and reproducible build output
+.build/
+build/
+DerivedData/
+**/DerivedData/
+**/.gradle/
+**/.gradle-user-home/
+**/.idea/
+**/.kotlin/
+**/xcuserdata/
+**/.DS_Store
+**/local.properties
+
+# Local captures and vehicle-location history can contain private identifiers/data.
+data/live_27D5.jsonl
+data/live_27D5_audit.csv
+data/vehicle_trips.json
+**/captures/
+
+# Generated install/package artifacts; publish these as versioned GitHub Releases.
+**/*.apk
+**/*.aab
+**/*.ipa
+**/*.xapk
+**/*.app/
+**/*.zip
+**/*.bin
+**/*.elf
+**/*.map
+**/.pio/
+
+# Nested upstream checkout metadata must never be copied into this repository.
+**/.git/
+
+# Local secrets and machine-specific settings.
+.env*
+**/config/config.h
+*.jks
+*.keystore

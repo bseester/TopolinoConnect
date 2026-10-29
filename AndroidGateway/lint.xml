@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- usb-serial 3.11.0 brings Kotlin 2.2 metadata; this app's Kotlin 2.0.21 compiler cannot consume it. -->
+    <issue id="GradleDependency">
+        <ignore path="app/build.gradle.kts" />
+    </issue>
+</lint>

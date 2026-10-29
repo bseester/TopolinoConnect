@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B3E8FA06371BE1459943CFB /* MyCitroenVehicleWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 848C6C9BCE5C934DDEAB18E9 /* MyCitroenVehicleWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		77FAC777374FD880C89242EC /* MyCitroenPortApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9513C03831844E1A202B4B09 /* MyCitroenPortApp.swift */; };
+		9BA5AE5E0CF6B290D90A8B01 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF05CD84CCB21F8581DE1C9 /* assets */; };
+		A605FBA405F10241EC495B19 /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8EB0C093DA53BF7ABAD810 /* AppIcons.xcassets */; };
+		A78CA3FBD9993FD564A3A2B6 /* BLEModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E86DF382766AC6FF22D0CB /* BLEModel.swift */; };
+		BE49C2A5C282165D25C25B9B /* WatchVehicleSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B354E9E88566CAA3A5C8562 /* WatchVehicleSnapshot.swift */; };
+		C61DA48F38A8D1E56E937BC2 /* AndroidGatewayClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66C17A9A2BE138C114E059A /* AndroidGatewayClient.swift */; };
+		CB7E382AE34EE54AF51FE7F7 /* TopolinoVehicleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D218C3C13FD9EA7EC145 /* TopolinoVehicleWidget.swift */; };
+		D4A50086D36B2E6F9A17BC46 /* WidgetSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5636C8D645D44E859617C3 /* WidgetSnapshotStore.swift */; };
+		E8270B0573D95617DED6B4CC /* WidgetSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5636C8D645D44E859617C3 /* WidgetSnapshotStore.swift */; };
+		EDD32DF4CF7E7C7DB7D4F227 /* WatchSnapshotBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A35607CE6A0FC8E13CDDF8 /* WatchSnapshotBridge.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D80E639ED7054BFCA30598F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 622B868A2D4F9A6FFE5E091D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FC6C47AE51BCC6C395A1F2C;
+			remoteInfo = MyCitroenPortWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B39BDA0AB8C010D579D44E1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6B3E8FA06371BE1459943CFB /* MyCitroenVehicleWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6B4B5B7CED744864F52590 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A54B018B4524ABE700A0216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1415D218C3C13FD9EA7EC145 /* TopolinoVehicleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopolinoVehicleWidget.swift; sourceTree = "<group>"; };
+		310A8043B9A4AC2427A858B9 /* MyFIATWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFIATWatchApp.swift; sourceTree = "<group>"; };
+		4B354E9E88566CAA3A5C8562 /* WatchVehicleSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVehicleSnapshot.swift; sourceTree = "<group>"; };
+		4C0F81E5C462F04252A7D49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D8EB0C093DA53BF7ABAD810 /* AppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcons.xcassets; sourceTree = "<group>"; };
+		848C6C9BCE5C934DDEAB18E9 /* MyCitroenVehicleWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyCitroenVehicleWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A35607CE6A0FC8E13CDDF8 /* WatchSnapshotBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSnapshotBridge.swift; sourceTree = "<group>"; };
+		8EF05CD84CCB21F8581DE1C9 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		9513C03831844E1A202B4B09 /* MyCitroenPortApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCitroenPortApp.swift; sourceTree = "<group>"; };
+		AE5636C8D645D44E859617C3 /* WidgetSnapshotStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshotStore.swift; sourceTree = "<group>"; };
+		B0173A3BC351DA86E1A40595 /* MyCitroen Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyCitroen Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0A3C177C63E509DF6EF8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D644F5337082CF512E1CC16B /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
+		E4E86DF382766AC6FF22D0CB /* BLEModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEModel.swift; sourceTree = "<group>"; };
+		F66C17A9A2BE138C114E059A /* AndroidGatewayClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidGatewayClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0FBEB671768A78C6D159E52A /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				0A54B018B4524ABE700A0216 /* Assets.xcassets */,
+				4C0F81E5C462F04252A7D49E /* Info.plist */,
+				310A8043B9A4AC2427A858B9 /* MyFIATWatchApp.swift */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		1BC5D7F2BEAF12CAA446880C /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A3C177C63E509DF6EF8B0 /* Info.plist */,
+				1415D218C3C13FD9EA7EC145 /* TopolinoVehicleWidget.swift */,
+				D644F5337082CF512E1CC16B /* WidgetExtension.entitlements */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		5A66084A7DE0FDACE1835571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0173A3BC351DA86E1A40595 /* MyCitroen Test.app */,
+				848C6C9BCE5C934DDEAB18E9 /* MyCitroenVehicleWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A45CF0DD51184EC99BD26FC4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E4E86DF382766AC6FF22D0CB /* BLEModel.swift */,
+				F66C17A9A2BE138C114E059A /* AndroidGatewayClient.swift */,
+				87A35607CE6A0FC8E13CDDF8 /* WatchSnapshotBridge.swift */,
+				4B354E9E88566CAA3A5C8562 /* WatchVehicleSnapshot.swift */,
+				AE5636C8D645D44E859617C3 /* WidgetSnapshotStore.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E20575FFAFF1C0D14F8FF03D = {
+			isa = PBXGroup;
+			children = (
+				7D8EB0C093DA53BF7ABAD810 /* AppIcons.xcassets */,
+				8EF05CD84CCB21F8581DE1C9 /* assets */,
+				9513C03831844E1A202B4B09 /* MyCitroenPortApp.swift */,
+				A45CF0DD51184EC99BD26FC4 /* Sources */,
+				0FBEB671768A78C6D159E52A /* WatchApp */,
+				1BC5D7F2BEAF12CAA446880C /* WidgetExtension */,
+				5A66084A7DE0FDACE1835571 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FC6C47AE51BCC6C395A1F2C /* MyCitroenPortWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2815953AC9D29AF0ECB742C /* Build configuration list for PBXNativeTarget "MyCitroenPortWidget" */;
+			buildPhases = (
+				B9B6FAF0A1E2DA28111CAD81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCitroenPortWidget;
+			packageProductDependencies = (
+			);
+			productName = MyCitroenPortWidget;
+			productReference = 848C6C9BCE5C934DDEAB18E9 /* MyCitroenVehicleWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9F7CE8EC0253EE0A3F5AA98E /* MyCitroenPort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4265DF5B2A8A2022A5F2774E /* Build configuration list for PBXNativeTarget "MyCitroenPort" */;
+			buildPhases = (
+				28C1314FA9DB1ACB058F16D4 /* Sources */,
+				33231DB83421961D91AE89BA /* Resources */,
+				1B39BDA0AB8C010D579D44E1 /* Embed Foundation Extensions */,
+				FE6B4B5B7CED744864F52590 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6857F6FD761653176C77D5A /* PBXTargetDependency */,
+			);
+			name = MyCitroenPort;
+			packageProductDependencies = (
+			);
+			productName = MyCitroenPort;
+			productReference = B0173A3BC351DA86E1A40595 /* MyCitroen Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		622B868A2D4F9A6FFE5E091D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9F7CE8EC0253EE0A3F5AA98E = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 100AF632D90660F9F5570C19 /* Build configuration list for PBXProject "MyCitroenPort" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E20575FFAFF1C0D14F8FF03D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5A66084A7DE0FDACE1835571 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F7CE8EC0253EE0A3F5AA98E /* MyCitroenPort */,
+				0FC6C47AE51BCC6C395A1F2C /* MyCitroenPortWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33231DB83421961D91AE89BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A605FBA405F10241EC495B19 /* AppIcons.xcassets in Resources */,
+				9BA5AE5E0CF6B290D90A8B01 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C1314FA9DB1ACB058F16D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78CA3FBD9993FD564A3A2B6 /* BLEModel.swift in Sources */,
+				C61DA48F38A8D1E56E937BC2 /* AndroidGatewayClient.swift in Sources */,
+				77FAC777374FD880C89242EC /* MyCitroenPortApp.swift in Sources */,
+				EDD32DF4CF7E7C7DB7D4F227 /* WatchSnapshotBridge.swift in Sources */,
+				BE49C2A5C282165D25C25B9B /* WatchVehicleSnapshot.swift in Sources */,
+				D4A50086D36B2E6F9A17BC46 /* WidgetSnapshotStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B6FAF0A1E2DA28111CAD81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E382AE34EE54AF51FE7F7 /* TopolinoVehicleWidget.swift in Sources */,
+				E8270B0573D95617DED6B4CC /* WidgetSnapshotStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6857F6FD761653176C77D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FC6C47AE51BCC6C395A1F2C /* MyCitroenPortWidget */;
+			targetProxy = D80E639ED7054BFCA30598F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		342A0F60D2E09B34A906307E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		59ACFC54CA942F46460D5D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AF3F5C91422D433C6F97149A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension/WidgetExtension.entitlements;
+				DEVELOPMENT_TEAM = T4TT59WYZG;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.topolinoconnect.mycitroenport.widget;
+				PRODUCT_NAME = MyCitroenVehicleWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0139424E1B7F28FDD0807FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4TT59WYZG;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.topolinoconnect.mycitroenport;
+				PRODUCT_NAME = "MyCitroen Test";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCA897ACAC66F0EA5308A79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension/WidgetExtension.entitlements;
+				DEVELOPMENT_TEAM = T4TT59WYZG;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.topolinoconnect.mycitroenport.widget;
+				PRODUCT_NAME = MyCitroenVehicleWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD301109D8CFE25FC78E212B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4TT59WYZG;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.topolinoconnect.mycitroenport;
+				PRODUCT_NAME = "MyCitroen Test";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100AF632D90660F9F5570C19 /* Build configuration list for PBXProject "MyCitroenPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342A0F60D2E09B34A906307E /* Debug */,
+				59ACFC54CA942F46460D5D22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4265DF5B2A8A2022A5F2774E /* Build configuration list for PBXNativeTarget "MyCitroenPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0139424E1B7F28FDD0807FB /* Debug */,
+				CD301109D8CFE25FC78E212B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2815953AC9D29AF0ECB742C /* Build configuration list for PBXNativeTarget "MyCitroenPortWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA897ACAC66F0EA5308A79F /* Debug */,
+				AF3F5C91422D433C6F97149A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 622B868A2D4F9A6FFE5E091D /* Project object */;
+}

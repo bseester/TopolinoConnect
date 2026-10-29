@@ -1,0 +1,8 @@
+name = "topolino-gateway-relay"
+main = "src/index.mjs"
+compatibility_date = "2026-10-20"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "topolino-gateway-relay"
+database_id = "SET_AFTER_CREATING_D1_DATABASE"
